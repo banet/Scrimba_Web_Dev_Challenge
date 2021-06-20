@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="calculator_container" id="form">
+        <h1>Tip Calculator</h1>
+        <div class="form_control">
+            <label for="bill">Bill (in $)</label>
+            <input type="number" id="bill_value" placeholder="100" />
+        </div>
+    
+        <div class="form_control">
+            <label for="tip">Tip %</label>
+            <input type="number" id="tip_value" placeholder="10" />
+        </div>
+        <div class="form_control">
+            <label for="people">People</label>
+            <input type="number" id="people_value" min="1" max="10" placeholder="10" />
+        </div>
+    
+        <footer>
+            <button class="btn" id="calculate">Calculate</button>
+            <div class="result">
+                <span>Total:</span> <strong id="total">[$110]</strong>
+            </div>
+            <div class="tip">
+                <span>Tip <strong id="tip_procent">[%]</strong></span> 
+            </div>
+            <div class="people">
+                <span>People: <strong id="people_number">[num]</strong></span>
+            </div>
+        </footer>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
