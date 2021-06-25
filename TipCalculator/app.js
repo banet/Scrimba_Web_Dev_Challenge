@@ -13,10 +13,12 @@
 
 
 // Grab elements
-const form = document.querySelector('#form')
+
 const bill = document.querySelector('#bill_value')
 const tip = document.querySelector('#tip_value')
+const tipProcentValue = document.querySelector('#tip_procent')
 const peopleValue =document.querySelector('#people_value')
+const amountPerson = document.querySelector('#amount_person')
 const peopleNumber = document.querySelector('#people_number')
 const btn = document.querySelector('#calculate')
 
@@ -24,27 +26,37 @@ const result = document.querySelector('#total')
 
 // Add eventListener
 
-//btn.addEventListener('click', calculateTip)
 btn.addEventListener('click', calculateTip )
 
+
+
 function calculateTip() {
-    let billValue = bill.value
-    let tipProcent  = (tip.value / 100)
-    let tipValue = Number(tipProcent) * Number(billValue)
-    
-   
-    let total = Number(tipValue) + Number(billValue)
-    console.log(tipValue)
+     let billValue = bill.value
+     let tipProcent  = tip.value / 100
+     let tipValue = tipProcent * billValue
 
-    result.textContent = total 
-   peopleCalculateTip()
+    // Show result
+    let totalSum = Math.round(Number(tipValue) + Number(billValue)) 
+    result.textContent = totalSum 
+
+    // Show number of People
+     let numberOfPeople = peopleValue.value
+     peopleNumber.textContent = numberOfPeople
+
+     //Show amount tip per person
+     let tipEachPerson = Math.round(totalSum / numberOfPeople)
+     amountPerson.textContent = +tipEachPerson 
+       
+
+   showTipProcent()
     
 }
 
 
-function peopleCalculateTip() {
-     let howManyPeople = peopleValue.value
-     peopleNumber.textContent = howManyPeople
-    console.log(howManyPeople)
+function showTipProcent() {
+
+     // Show tip in % 
+      let tipProcent  = Math.floor((tip.value / 100)*100)
+      tipProcentValue.textContent = tipProcent
 }
-// When btn click: show tip , show people show total amount
+

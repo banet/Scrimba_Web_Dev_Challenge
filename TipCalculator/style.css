@@ -41,6 +41,7 @@ h1 {
 .result {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0.4rem;
 }
 
 .btn {
