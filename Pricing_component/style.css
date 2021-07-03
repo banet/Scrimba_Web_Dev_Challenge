@@ -85,7 +85,7 @@ button:focus {
   background-color: white;
 }
 
-.card-cat {
+.card-animation {
   transition: 0.3s ease-in-out;
   transform: scale(1.12);
 }
