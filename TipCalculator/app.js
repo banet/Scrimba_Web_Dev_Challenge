@@ -6,9 +6,7 @@
  * Challenge 2
  * - Add another field woth total number of people
  * - Show tip and total per person
- *
- * 
- * 
+
  */
 
 
