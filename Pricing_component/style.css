@@ -89,3 +89,12 @@ button:focus {
   transition: 0.3s ease-in-out;
   transform: scale(1.12);
 }
+
+.selected {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.12);
+}
+
+.unselected {
+  opacity: 0.6;
+}
