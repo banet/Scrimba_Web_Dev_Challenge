@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh;
+  background-color: lightblue;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  background-color: whitesmoke;
+}
+h1 {
+  font-size: 5rem;
+}
+h1 > span {
+  color: pink;
+}
+.subtitle {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.cat-basket {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+.container > .pic {
+  width: auto;
+  max-height: 200px;
+}
