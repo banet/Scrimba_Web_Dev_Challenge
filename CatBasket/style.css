@@ -7,37 +7,70 @@
 
 body {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  min-width: 100vh;
-  background-color: lightblue;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #dee2e6;
   font-family: "Open Sans", sans-serif;
 }
 
-.container {
-  background-color: whitesmoke;
-}
 h1 {
   font-size: 5rem;
+  text-align: center;
+  color: #112548;
 }
 h1 > span {
-  color: pink;
+  color: #cc5c70;
 }
 .subtitle {
   font-size: 2rem;
   text-align: center;
+  color: #112548;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #f8f9fa;
 }
 
-.cat-basket {
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  width: 90%;
+  gap: 1rem;
   margin: 0 auto;
-  border-radius: 4px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+
+  padding: 1rem;
+
+  background-color: whitesmoke;
 }
-.container > .pic {
-  width: auto;
-  max-height: 200px;
+
+.cards {
+  background-color: lightgoldenrodyellow;
+}
+.cat-basket {
+  border-top-left-radius: calc(0.25rem - 1px);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  background-color: #f8f9fa;
+}
+
+.card-info {
+  padding: 0.6rem;
+  height: 70%;
+  overflow: hidden;
+}
+
+.cat-basket > h4 {
+  padding: 0.6rem;
+}
+.cat-basket > p {
+  font-size: 12px;
+  padding: 0 0.6rem;
+}
+.cat-basket .pic {
+  object-fit: fill;
+  max-width: 200px;
 }
