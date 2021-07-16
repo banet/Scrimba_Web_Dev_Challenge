@@ -10,8 +10,11 @@ function Header() {
   return (
     <div className="container">
          <h1><span>C</span>at<span>B</span>asket</h1>
+         
         <p className="subtitle">Social Media for cats</p>
-      {catsInfo}
+        <div className="cards">
+      {cats.map( item => (<CatCard key={item.id}  {...item} />))}
+      </div>
     </div>
     )
 
