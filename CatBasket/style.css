@@ -37,7 +37,7 @@ h1 > span {
   background-color: #f8f9fa;
 }
 
-.cards {
+/* .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -46,11 +46,11 @@ h1 > span {
   padding: 1rem;
 
   background-color: whitesmoke;
-}
+  height: 500px;
+  width: 800px;
+} */
 
-.cards {
-  background-color: lightgoldenrodyellow;
-}
+
 .cat-basket {
   border-top-left-radius: calc(0.25rem - 1px);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);

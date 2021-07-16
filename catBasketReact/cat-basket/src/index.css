@@ -1,13 +1,92 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Styling CatCard*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #dee2e6;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: #112548;
+}
+h1 > span {
+  color: #cc5c70;
+}
+.subtitle {
+  font-size: 2rem;
+  text-align: center;
+  color: #112548;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+
+  padding: 1rem;
+
+  background-color: whitesmoke;
+}
+
+.cards {
+  background-color: lightgoldenrodyellow;
+}
+.cat-basket {
+  border-top-left-radius: calc(0.25rem - 1px);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  background-color: #f8f9fa;
+}
+
+.card-info {
+  padding: 0.6rem;
+  height: 70%;
+  overflow: hidden;
+}
+
+.cat-basket > h4 {
+  padding: 0.6rem;
+}
+.cat-basket > p {
+  font-size: 12px;
+  padding: 0 0.6rem;
+}
+.cat-basket .pic {
+  object-fit: fill;
+  max-width: 200px;
 }

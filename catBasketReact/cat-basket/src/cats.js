@@ -1,6 +1,4 @@
-
-
-const cats = [
+export const cats = [
     {
         name: 'Pumpkin',
         img: 'https://images.unsplash.com/photo-1569591159212-b02ea8a9f239?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
@@ -17,27 +15,3 @@ const cats = [
         text: 'Once upon the time there was a cat'
     }
 ]
-
-// const catCard = cats.map( function(item) {
-//     return <h4>item.name</h4> 
-    
-// })
-// console.log(catCard)
-
-cats.forEach(item => {
-    const catInfoCard = `
-            <div class="cat-basket">
-                <div class="card-info">  
-                    <img class="pic" src=${item.img} />
-                </div>
-                <h4>${item.name}</h4>
-                <p>${item.text}</p>
-            </div>`
-    
-    const content = document.createElement('div')
-    content.className = 'cards'
-    content.innerHTML = catInfoCard
-    content.style.background = '#444'
-    document.body.appendChild(content)
-    console.log(content)
-})
