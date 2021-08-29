@@ -10,21 +10,22 @@
 const loader = document.querySelector('#loader')
 const button = document.querySelector('#btn')
 const counter = document.querySelector('.counter')
-const timeLeft = counter.innerText
+
 
 button.addEventListener('click', loadSpinner)
 counter.addEventListener('click', loadSpinner)
+
 let interval;
-let count = 6;
+let timeLeft = counter.innerText;
+
 function loadSpinner() {
 //    count++
-   // counter.innerText = count
+    //counter.innerText = count
     
    loader.classList.toggle('loader-new')
    if(loader.classList.contains('loader-new')) {
        button.innerText = 'stop'
-       countDown()
-      
+       countDown()  
    }
    else {
        btn.innerText = 'load'
@@ -37,7 +38,7 @@ function loadSpinner() {
 
 function countDown() {
     
-    interval=setInterval(updateTimer, 100)
+    interval=setInterval(updateTimer, 200)
 }
 function updateTimer() {
     if(timeLeft > 0) {
@@ -46,8 +47,11 @@ function updateTimer() {
     }
     else {
         clearInterval(interval)
+        loader.classList.remove('loader-new')
+        button.innerText='Load'
     }
 }
+
 
 
 // setTimeout(function() {
