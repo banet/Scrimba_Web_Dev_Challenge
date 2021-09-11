@@ -1,0 +1,60 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.container {
+  background: linear-gradient(#f69f52, #ae92ee);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.colorText {
+  padding-top: 0.5rem;
+}
+
+.adviceEye {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: lightblue;
+  text-align: center;
+  padding: 0.5em;
+  position: relative;
+
+  box-shadow: 0 0 5px rgb(0 0 0 / 40%);
+}
+
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 700;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  border: none;
+  padding: 0.5em 1em;
+  margin: 1em;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  outline: none;
+}
+button:hover {
+  background-color: lightgrey;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+}
